@@ -1,0 +1,72 @@
+Consider Trees:
+
+T0:
+           r0
+          /
+         2
+
+T1:
+            r1
+           / \
+          1   3
+T2:
+            r2
+           / \ 
+          n1  13
+         /  \
+        3    7
+
+T3:
+            r3
+           / \ 
+          /   \ 
+         /     \
+        n2     n3
+       / \     / \ 
+      2   6   8  10
+
+T4:
+                r4 
+               / \
+              /   \
+             /     \
+            /       \
+           /         \
+          /           \
+         /             \
+        n4             n5
+       / \            / \
+      /   \          /   \
+     /     \        /     \
+    n6     n7      n8     n9
+   / \     / \    / \    / \
+  0   2   4   5  7   9  10  13
+
+Sequence of commands tested:
+
+T0.RangeUpdate(2, 2, 1)
+T0.GetLeafValue(2) == 1
+
+T1.RangeUpdate(1, 1, -1)
+T1.RangeUpdate(3, 3, 2)
+T1.RangeUpdate(1, 3, 1)
+T1.GetLeafValue(1) == 0
+T1.GetLeafValue(3) == 3
+
+T2.RangeUpdate(3, 13, -1)
+T2.RangeUpdate(7, 13, 6)
+T2.GetLeafValue(3) == -1
+T2.GetLeafValue(7) == 5
+
+T3.RangeUpdate(2, 10, 7)
+T3.RangeUpdate(8, 10, 2)
+T3.GetLeafValue(6) == 7
+T3.GetLeafValue(10) == 9
+
+T4.RangeUpdate(5, 13, 8)
+T4.RangeUpdate(2, 9, 3)
+T4.RangeUpdate(0, 13, -4)
+T4.GetLeafValue(0) == -4
+T4.GetLeafValue(4) == -1
+T4.GetLeafValue(5) == 7
+T4.GetLeafValue(13) == 4

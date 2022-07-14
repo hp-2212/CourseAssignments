@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="LaunchTerminalSettingsDialog">
+		<item key="terminalLabel" value="Copyright (c) Microsoft Corporation. All rights reserved. (WSL)"/>
+		<section name="SettingsPanelControl">
+			<section name="--distribution, -d [Argument] (WSL)">
+			</section>
+			<section name="Copyright (c) Microsoft Corporation. All rights reserved. (WSL)">
+				<item key="encoding" value="UTF-8"/>
+			</section>
+		</section>
+	</section>
+</section>
